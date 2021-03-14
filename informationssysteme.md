@@ -1,8 +1,15 @@
 ## ER-Modell, Teile, Bestandteile, ER-Modell erstellen
 Das ER-Modell ist ein grafisches Hilfsmittel für den Datenbankentwurf. Die Grundbausteine des ER-Modells sind Entities und Relationships. 
 
-## PK, FK Schlüssel beschreiben können, Welche Arten für PK gibt es, Einsatz Schlüssel in Zwischentabellen
-Primärschlüssel ist dazu da, in einer Tabelle einen Datensatz eindeutig identifizieren zu können. 
+## PK, FK Schlüssel beschreiben können
+- Primärschlüssel ist dazu da, in einer Tabelle einen Datensatz eindeutig identifizieren zu können. 
+- Ein Fremdschlüssel ist ein Attribut in einer Relation, welches eine Beziehung zu einem Schlüsselfeld einer anderen Relation herstellt.
+
+## Arten von Primärschlüsseln
+Man unterscheidet zwischen eindeutigen Primärschlüsseln und zusammengesetzten Primärschlüsseln.
+
+## Einsatz Schlüssel in Zwischentabellen
+Zwischentabellen kommen dann zum Einsatz, wenn eine n:m Beziehung vorliegt. Eine solche Zwischentabelle besiztz im Normalfall mindestens 2 Attribute, die als Fremdschlüssel auf die jeweiligen Daten der Tabellen n und m verweisen.
 
 ## Kardinalitäten, Beziehungsarten, Beschreibe wie Beziehungsarten umgesetzt sind
 - Die Kardinalität legt fest wie viele Entitäten zueinander in Beziehung stehen können
@@ -61,15 +68,50 @@ Primärschlüssel ist dazu da, in einer Tabelle einen Datensatz eindeutig identi
 - Festlegung der Zugriffsrechte
 
 ## DDL
-
+Die DDL (Data Definition Language) beschreibt das Datenschema (konzeptionelle Ebene) in der Daten gespeichert werden sollen. Das inkludiert den Aufbau der Tabellen mit den jeweiligen Datentypen, sowie Constraints, also Bedingungen, die beim hinzufügen von Daten überprüft werden.
 
 ## Constrains 
+Zu Constraints zählen z.B. ```NOT NULL``` und ```PRIMARY KEY```. Wenn Constraint-Bedingungen nicht erfüllt werden, wird eine Felermeldung ausgegeben (exception).
+
+Constraints können entweder bei der Definition angegeben werden oder durch ein ```ALTER``` später hinzugefügt.
 
 ## Sprachfamilien mit Beispielen und Creates, mit Constrains
-## DQL Abfragen und Möglichkeiten + Beispiele SELECT schreiben können
+#### DQL Abfrage Sprache (Data Query Language)
+- Vertikale Selektion: Beschränkung der Attribute die im Ergebnis der Abfrage angezeigt werden. (SELECT)
+- Horizontale Selektion: Beschränkung der Datensätze die dem User beim Ergebnis angezeigt werden solle. (WHERE)
+
+#### DML (Data Manipulation Language)
+Mit der DML werden Daten manipuliert
+- INSERT: Daten in die Datenbank einfügen
+- UPDATE: Daten in der Datenbank bearbeiten
+- DELETE: Daten innerhalb der Datenbank bearbeiten
+
+#### DDL: (Data Definition Language)
+Mit der DDL werden die Strukturen einer Relation angepasst.
+
+## DQL Abfragen und Möglichkeiten und Beispiele SELECT schreiben können
+Die DQL (Data Query Language) ist eine Teil der SQL Sprachfamilie und erlaubt die Abfrage von Daten aus einer relationalen Datenbank.
+
+SELECT-Statements sind meist nach einem festen Schema aufgebaut, dass entweder Syntaxmäßig vorgegeben wird bzw. es sich um eine Konvention handelt.
+
+- Attributes: Attribute nach die ausgegeben werden sollen
+- Aliases: Ein Proxy auf ein Attribut
+- Aggregat-Functions: z.B- ```COUNT()```, ```MIN()```, ```MAX()``` - Funktionen die Attribute als Argumente annehmen.
+- Table-Name: Name der Tabelle, über die ein Select ausgeführt werden soll.
+- Joins: Relationen der Tabelle, die bei der Abfrage berücksichtigt werden sollen.
+- Conditions: Spezfikationen, die die Daten, die ausgegeben werden erfüllen müssen.
+- Groupings: Gruppierung nach öfter vorkommenden Daten
+- Grouping-Conditions: Spezifikationen die virtuelle Felder erfüllen müssen
+- Order: Reihenfolge in der Daten ausgegeben werden sollen
+- Pagination: Limitierung der Daten ```LIMIT 1 OFFSET 1``` (maximale Anzahl der Daten und von welchem Datensatz aus diese ausgegeben werden sollen)
+
 ## Datentypen
+Jedem Attribut wird ein bestimmter Datentyp zugeordnet. Dabei unterscheidet man zwischen verschiedenen Zahlentypen (Ganzzahlig, Dezimal), Zeichenketten (Text, Varchar), Datumstypen und Boolean (true, false).
+
 ## JOIN, Mengenschreibweise, Vergleich Join zu Sub Select
 ## Gruppierung und Aggregatsfunktion
+- Gruppierungen werden dann eingesetzt, um Datensätze nach einem oder mehreren Kriterien zusammenzufassen. Dies geschieht mittels des ```GROUP BY``` Statements.
+
 ## Lebenszyklus 
 ## DBMS
 Das Datenbankmanagementsystem verwaltet die Datenbank und regelt alle Zugriffe darauf. 
