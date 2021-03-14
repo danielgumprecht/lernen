@@ -1,14 +1,14 @@
 ## ER-Modell, Teile, Bestandteile, ER-Modell erstellen
 Das ER-Modell ist ein grafisches Hilfsmittel für den Datenbankentwurf. Die Grundbausteine des ER-Modells sind Entities und Relationships. 
 
-## PK, FK Schlüssel beschreiben können
+## Primärschlüssel und Fremdschlüssel beschreiben
 - Primärschlüssel ist dazu da, in einer Tabelle einen Datensatz eindeutig identifizieren zu können. 
 - Ein Fremdschlüssel ist ein Attribut in einer Relation, welches eine Beziehung zu einem Schlüsselfeld einer anderen Relation herstellt.
 
 ## Arten von Primärschlüsseln
 Man unterscheidet zwischen eindeutigen Primärschlüsseln und zusammengesetzten Primärschlüsseln.
 
-## Einsatz Schlüssel in Zwischentabellen
+## Einsatz von Schlüsseln in Zwischentabellen
 Zwischentabellen kommen dann zum Einsatz, wenn eine n:m Beziehung vorliegt. Eine solche Zwischentabelle besiztz im Normalfall mindestens 2 Attribute, die als Fremdschlüssel auf die jeweiligen Daten der Tabellen n und m verweisen.
 
 ## Kardinalitäten, Beziehungsarten, Beschreibe wie Beziehungsarten umgesetzt sind
@@ -108,42 +108,62 @@ SELECT-Statements sind meist nach einem festen Schema aufgebaut, dass entweder S
 ## Datentypen
 Jedem Attribut wird ein bestimmter Datentyp zugeordnet. Dabei unterscheidet man zwischen verschiedenen Zahlentypen (Ganzzahlig, Dezimal), Zeichenketten (Text, Varchar), Datumstypen und Boolean (true, false).
 
-## JOIN, Mengenschreibweise, Vergleich Join zu Sub Select
+## JOIN, Mengenschreibweise
+
+
+## Vergleich Join zu Sub Select
+
+
 ## Gruppierung und Aggregatsfunktion
-- Gruppierungen werden dann eingesetzt, um Datensätze nach einem oder mehreren Kriterien zusammenzufassen. Dies geschieht mittels des ```GROUP BY``` Statements.
+- Gruppierungen werden dann eingesetzt, um Datensätze nach einem oder mehreren Kriterien zusammenzufassen. Dies geschieht mittels des `GROUP BY` Statements.
+- Aggregatfunktionen führen Berechnungen über alle oder ausgewählte Datensätze durch. Beispiele sind: `MAX`, `MIN`, `AVG` und `COUNT`
 
 ## Lebenszyklus 
+
+
 ## DBMS
 Das Datenbankmanagementsystem verwaltet die Datenbank und regelt alle Zugriffe darauf. 
 
-## ACID und DBM
-## Aufgabe Log Buch
+## ACID und DBMS
+### Atomicy
+Eine Transaktion wird entweder komplett ausgeführt oder garnicht. Bei Fehlern wird alles rückgängig gemacht.
+
+### Consistency
+Die Datenbank befindet sich durch die Integritätsbedingungen in einen Konsistenten Zustand.
+
+### Isolation
+Mehrere gleichzeitige Transaktionen stören sich nicht gegenseitig.
+
+### Durability
+Das Ergebnis einer Transaktion ist dauerhaft.
+
+## Aufgaben vom Logbuch
+- Redo Log - Speicherung aller abgeschlossenen Transaktionen
+- Undo Log - Speicherung aller nicht abgeschlossenen Operationen einer Transaktion
+
+Stromausfall - Mit dem Undo Log
+
 ## 3 Ebenen Model + Sprachfamilien zuordnen
+
+
 ## Vorteile von Datenbank gegebüber File Speicherung
+- Daten Strukturiert abspeichern und abfragen
+- Integrität der Daten bleibt gesichert
+- Vereinfachte Filterung der Daten
 
 ## Vortile DBMS
 - Auch bei hoher Datenredundanz geringer Aufwand (wenn richtig konfiguriert)
 - Vermeidung von Inkonsistenzen (wenn richtig konfiguriert)
 - Erleichterter Mehrbenutzerbetrieb
 - Erleichterte Zugriffverwaltung
-
 - Sicherung der Integrität 
 - Datensicherung 
 - Synchronisation 
 - Zugriffsteuerung
 
-Das Datenbankmanagementsystem ermöglicht
-- Das Anlegen von Datenbanken
-- Die Speicherung, Änderung und Löschung der Daten
-- Das Abfragen der Datenbank
-- Die Verwaltung von Benutzern, Zugriffen und Zugriffsrechten
-
 ## Teile des DBMS
 - Ein Datenbanksystem besteht aus einer Anzahl von Datenbanken und den Datenbankmanagementsystem.
 - Das Datenbankmanagementsystem ist die Schnittstelle zwischen der Datenbank und deren Benutzern.
-
-- Data Dictionary
-- Logbuch 
 
 ## Breitstellung von Daten DBMS
 ## Datenbankmodelle vergleichen 
@@ -176,13 +196,16 @@ Bei einem relationalen Datenbank Modell werden die Daten in Tabellenform gespeic
 In welcher Form werden die Daten gespeichert und wie soll darauf zugegriffen werden?
 
 ## Transaktionen 
-Eine Folge von mehreren Operationen die nur gemeinsam ausgefüllt werden sollen.  
+Eine Folge von mehreren Operationen die nur gemeinsam ausgefüllt werden können.  
 
 ## Anomalien
 Das Fehlverhalten der Datenbank durch Verletzung der Regel every information once. Dadurch ist nicht mehr erkennbar welche Tabelle oder Spalte den richtigen Inhalt enthält
 
 ## Locks
-## Rechtekonzept 
+#### Isolation Level
+Der Grad der Parallelität von Transaktionen. Bei einem höheren grad können weniger Probleme mit der Konsistenz entstehen.
+
+## Rechtekonzept
 Rechte der Benutzer können auf unterschiedlichen Ebenen vergeben werden. Der Zugriff der Benutzer kann auf ganze Datenbanken, einzelne Tabellen bis hin zu einzelnen Attributen eingeschränkt werden. 
 
 Wesentliche Rechte einer Datenbank sind
@@ -202,3 +225,13 @@ Durch den Datenbank Index wird die Suche und das sortieren nach bestimmten Felde
 Eine Software zur gemeinschaftlichen Erstellung digitaler Inhalte. Meistens zur Verwendung in Webseiten. Bei volldynamischen Systemen wird erst bei der Abfrage ein Format generiert.
 
 ## Backup
+#### Full Backup
+- Volles Backup
+
+#### Inkrementelles Backup
+- Aufeinander aufbauend
+- Veränderungen seit dem letzen Backup werden gesichert
+- Zur Wiederherstellung sind alle Backups seit dem letzen Vollbackup notwendig
+
+#### Differentielles Backup
+- Zur Wiederherstellung ist das Vollbackup und das gewünschte Differenzielle Backup notwendig
