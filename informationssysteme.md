@@ -39,8 +39,6 @@ Zwischentabellen kommen dann zum Einsatz, wenn eine n:m Beziehung vorliegt. Eine
 - Es gibt untereinander keine Abhängigkeiten
 - Wenn ein nicht Schlüsselfeld über ein anderes Nicht-Schlüsselfeld identifizierbar ist, wird von Transistiver Abhängigkeit gesprochen
 
-### Normalform 4 und 5
-
 ## Entwurfsphasen
 
 ### Anforderungsanalyse
