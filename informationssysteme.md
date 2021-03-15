@@ -1,41 +1,23 @@
 # Meine INSY Themenübersicht
 
 ## ER-Modell, Teile, Bestandteile, ER-Modell erstellen
-
-
-
 Das ER-Modell ist ein grafisches Hilfsmittel für den Datenbankentwurf. Die Grundbausteine des ER-Modells sind Entities und Relationships.
 
 ## Primärschlüssel und Fremdschlüssel beschreiben
-
-
-
 - Ein Primärschlüssel identifiziert einen Datensatz in einer Tabelle eindeutig.
 - Ein Fremdschlüssel ist ein Attribut in einer Relation, das eine Beziehung zu einem Schlüsselfeld einer anderen Relation herstellt.
 - Ein Fremdschlüssel bezeichnet die Übereinstimmung eines Datenfeldes in einer Tabelle mit dem Primärschlüssel einer anderen Tabelle.
 
 ## Arten von Primärschlüsseln
-
-
-
 Man unterscheidet zwischen eindeutigen, zusammengesetzten und künstlichen Primärschlüsseln.
 
 ## Einsatz von Schlüsseln in Zwischentabellen
-
-
-
 Zwischentabellen kommen dann zum Einsatz, wenn eine n:m Beziehung vorliegt. Eine solche Zwischentabelle besitzt im Normalfall mindestens 2 Attribute, die als Fremdschlüssel auf die jeweiligen Daten der Tabellen n und m verweisen.
 
 ## Kardinalitäten
-
-
-
 Die Kardinalität legt fest wie viele Entitäten zueinander in Beziehung stehen können
 
 ## Spezielle Beziehungsformen (is a, generalisierung, Rekursion)
-
-
-
 - Genau zwei Entities sind miteinander verbunden (Binär)
 - Genau drei Entities sind miteinander verbunden (Ternär)
 - Mehrere Entities sind miteinander verbunden (n-är)
@@ -43,11 +25,7 @@ Die Kardinalität legt fest wie viele Entitäten zueinander in Beziehung stehen 
 - Teilmengenbeziehung (Generalisierung)
 
 ## Normalformen mit Beispiel
-
-
-
 ### Normalform 1
-
 - Ein Gebilde aus Zeilen und Spalten
 - In jeden Datensatz sind nur Daten die zu einem Objekt der realen Welt gehören
 - Jeder Datensatz kommt nur einmal vor

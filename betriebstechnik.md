@@ -104,9 +104,6 @@ Der Wert aller Vermögensgegenstände eines Betriebs
 - Sicherheitsbedürfnisse (Kündigungsschutz, Altersvorsorge)
 - Grundbedürfnisse (Angemessene Bezahlung und Arbeitszeiten)
 
-## Stelle die Zwei-Faktoren-Theorie (von Frederick Herzberg) grafisch dar 
-![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/dcfc5427-3f09-447b-9e98-45292b94342c/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210311%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210311T153200Z&X-Amz-Expires=86400&X-Amz-Signature=6369e256e02390293826b43535df39fd95e505ca95421e9e400d3d2c01578b2f&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
-
 ## Die Zwei-Faktoren-Theorie (von Frederick Herzberg) definiert Zufriedenheit ist nicht gleich nicht unzufrieden. Erkläre was damit gemeint ist 
 - Das Gegenteil von Unzufriedenheit ist nicht Zufriedenheit, sondern die Abwesenheit von Unzufriedenheit
 - Das Gegenteil von Zufriedenheit ist nicht Unzufriedenheit, sondern die Abwesenheit von Zufriedenheit
@@ -522,18 +519,93 @@ Teilung in Protokollierte und nicht Protokollierte Einzelunternehmen.
 - Geschäftsidee bewerten und auf Punkte eingehen
 
 ## Nenne die zumindest drei Fragen, die sich ein Unternehmensgründer bzw. eine Unternehmensgründerin bei der Bewertung der Geschäftsidee stellen könnte 
+- Wie finanzieren
+- Welche Rechtsform
+- Rechtlichen Grundlagen
+- Zielgruppe
+- Businessplan
+
 ## Welche persönlichen Voraussetzungen sollte ein Unternehmensgründer bzw. eine Unternehmensgründerin erfüllen? 
+- Organisiert
+- Risikobereit
+- Eigenständig
+- Kontaktfähig
+- Motiviert
+- Ausdauernd
+
 ## Im Rahmen der Unternehmensgründung wird oft ein Businessplan erstellt. Erkläre wozu ein Businessplan verwendet werden kann 
+Der Businessplan ist ein schriftliches Unternehmenskonzept.
+- Leitlinie für Ziele und Aktivitäten
+- Bessere Verhandlungsmöglichkeit
+- Vorraussetzung bei Finanzierung durch Banken
+
 ## Erkläre, welche Überlegungen im Rahmen der Unternehmensgründung betreffen Markeing und Wettbewerb gemacht werden können 
+- Wem nutzt mein Produkt
+- Zahlbereitschaft der Kudnen
+- Stärken und Schwächen der Mitbewerber
+- Wer sind Wichtige Kundengruppen
+- Wie kann man die Kunden erreichen
+
 ## Gib einen Überblick über die Marketinginstrumente die im Rahmen der Unternehmensgründung zu empfehlen sind 
+#### Angebotsgestaltung
+- Sortiment
+- Qualität
+- Marke
+- Kundendienst
+
+#### Preisgestaltung
+- Rabatt
+- Skonto
+- Kredit
+
+#### Warenverteilung
+- Logistik
+- Absatzkanäle
+
+#### Marktbearbeitung
+- Public Relations
+- Persönlicher Verkauf
+- Werbung
+- Verkaufsförderung
+
 ## Welche Überlegungen können im Rahmen der Unternehmensgründung betreffend dem Kapitalbedarf der Unternehmung empfohlen werden? 
-## Skizziere die Funktionsweise und den Aufbau eines Finanzplans im Rahmen der Unternehmensgründung 
+- Wie hoch sind Miete und Personalkosten
+- Unvorhergesehenes berücksichtigen
+- Wie hoch ist der Kapitalbedarf für das Warenlager
+- Anschaffungskosten berücksichtigen
+- Finanzplan
+
 ## Welche Überlegungen sind im Rahmen der Unternehmensgründung im Rahmen der Finanzierung zu empfehlen? 
+- Welche Förderungen sind möglich
+- Welche Finanziellen Mittel brauche ich
+
 ## Nenne zumindest drei mögliche Finanzierungsformen im Rahmen der Unternehmensgründung und erkläre diese 
+- Eigenkapital
+- Förderungen
+- Kredit
+- Leasing
+
 ## Welche Kriterien sind im Rahmen der Unternehmensgründung bei Fremdfinanzierung besonders wichtig? 
+- Angebote der Banken vergleichen
+- Wissen für welchen Kredit man sich entscheidet
+- Plausible Unterlagen (Businessplan, Konzept)
+- Schriftliche Kreditzusage
+- Eventuell Experten einbeziehen
+
 ## Gebe einen Überblick über mögliche Förderungen im Rahmen der Unternehmensgründung 
+- Mikrokredit
+- Zuschuss
+- Geförderter Kredit
+
 ## Gib jeweils ein Beispiel für korrekte Firmenbezeichnungen von Einzelunternehmen, OG, KG und GmbH 
+- Einzelunternehmer
+- Gesellschafter einer OG
+- Komplementäre einer KG
+- Geschäftsführende Gesellschafter einer GmbH
+
 ## Im Rahmen der Unternehmensgründung spielt die sozialversicherungsrechtliche Absicherung der Gründer bzw. Gründerinnen eine wichtige Rolle. Zeige auf, welche Personengruppen im Rahmen der gesetzlichen Sozialversicherung pflichtversichert sind 
+
+
 ## Welche steuerlichen Plfichten sind bei Unternehmensgründung zu erfüllen? 
 ## Mit Unternehmensgründung entstehen Steuerpflichten. Zeige auf, welche Steuern mit Unternehmensgründung relevant werden können und erkläre diese 
 ## Einzelunternehmer unterliegen der Einkommenssteuer. Wie wird diese berechnet Erkläre in diesem Zusammenhang den Begriff Einkommenssteuertarif 
